@@ -3,17 +3,28 @@ import logo from './logo.svg';
 import './style1.css';
 import Calendar from './assets/calendar.png';
 import Logo from './assets/LOGO.png';
-import Link from './assets/Payments.png';
+import Pay from './assets/Payments.png';
 import Leftb from './assets/Project-details.png';
+import Customer from './assets/CR.jpeg';
+import Dashboard from './assets/Dashb.jpeg';
+import DD from './assets/DD.jpeg';
+import Notification from './assets/Noti.jpeg';
+import PP from './assets/PP.jpeg';
 
 function Dash() {
+  // var selector = '.links_name h3';
+
+// (selector).on('click', function(){
+//    (selector).removeClass('act');
+//    (this).addClass('act');
+// });
   return (
 
 <>
   <div className="sidebar">
     <div className="logo-details">
       {/* <i class='bx bxl-c-plus-plus'></i> */}
-      <img src={Logo} style={{ marginLeft: 47 }} />
+      <img src={Logo} style={{ marginLeft: 47, width: 84}} />
       {/* <span class="logo_name">RNS</span> */}
       <hr />
     </div>
@@ -21,47 +32,62 @@ function Dash() {
       <li>
         <a href="#" className="active">
           <i className="bx bx-grid-alt" />
-          <span
-            className="links_name"
-            style={{
-              color:
-                "transparent linear-gradient(102deg, #048BCF 0%, #0437C6 100%) 0% 0% no-repeat padding-box"
-            }}
-          >
-            Harsh Kadyan
-          </span>
-          <span className="links_name">Dashboard</span>
+          {/* <div className='aju'> */}
+          <img src={PP} style={{ marginLeft: -20, width: 35}} />
+          <span style={{color:"#ffffff"}} className="links_name">Harsh Kadyan</span>
+          {/* <img src={DD} style={{ marginLeft: 47, width: 84}} /> */}
+          {/* </div> */}
         </a>
+        <hr style={{marginLeft:30, marginRight:10, color:'#707070'}}/>
+      </li>
+      <li>
+        <a href="#">
+          <i className="bx bx-grid-alt" />
+          <img src={Dashboard} style={{ marginLeft: -35, width: 26, marginTop:20}} />
+       
+          <span style={{marginLeft:10,marginTop:20}} className="links_name">Dashboard</span>
+        </a>
+        <hr style={{marginLeft:30, marginRight:10, color:'#707070'}}/>
       </li>
       <li>
         <a href="#">
           <i className="bx bx-box" />
-          <span className="links_name">Project details</span>
+          <img src={Leftb} style={{ marginLeft: -35, width: 26, marginTop:20}} />
+          <span style={{marginLeft:10,marginTop:20}} className="links_name">Project details</span>
         </a>
+        <hr style={{marginLeft:30, marginRight:10, color:'#707070'}}/>
       </li>
       <li>
         <a href="#">
           <i className="bx bx-list-ul" />
-          <span className="links_name">Customer Relationship</span>
+          <img src={Customer} style={{ marginLeft: -35, width: 26, marginTop:20}} />
+          <span style={{marginLeft:10,marginTop:20}} className="links_name">Customer Relationship</span>
         </a>
+        <hr style={{marginLeft:30, marginRight:10, color:'#707070'}}/>
       </li>
       <li>
         <a href="#">
           <i className="bx bx-pie-chart-alt-2" />
-          <span className="links_name">Payments</span>
+          <img src={Pay} style={{ marginLeft: -35, width: 26, marginTop:20}} />
+          <span style={{marginLeft:10,marginTop:20}} className="links_name">Payments</span>
         </a>
+        <hr style={{marginLeft:30, marginRight:10, color:'#707070'}}/>
       </li>
       <li>
         <a href="#">
           <i className="bx bx-coin-stack" />
-          <span className="links_name">Calendar</span>
+          <img src={Calendar} style={{ marginLeft: -35, width: 26, marginTop:20}} />
+          <span style={{marginLeft:10,marginTop:20}} className="links_name">Calendar</span>
         </a>
+        <hr style={{marginLeft:30, marginRight:10, color:'#707070'}}/>
       </li>
       <li>
         <a href="#">
           <i className="bx bx-book-alt" />
-          <span className="links_name">Notification</span>
+          <img src={Notification} style={{ marginLeft: -35, width: 26, marginTop:20}} />
+          <span style={{marginLeft:10,marginTop:20}} className="links_name">Notification</span>
         </a>
+         <hr style={{marginLeft:30, marginRight:10, color:'#707070'}}/>
       </li>
       {/* <li>
     <a href="#">
@@ -120,9 +146,9 @@ function Dash() {
           <div className="right-side">
             <div className="box-topic">
               <span className="bxt" style={{ color: "#3411E2" }}>
-                1
+                1  
               </span>
-              Ongoing project
+                Ongoing project
             </div>
             {/* <div class="number">40,876</div> */}
             <div className="indicator">
@@ -134,10 +160,10 @@ function Dash() {
         </div>
         <div className="box">
           <div className="right-side">
-            <div className="box-topic">
-              <span className="bxt" style={{ color: "#0EC552" }}>
-                3
-              </span>{" "}
+            <div  className="box-topic">
+              <span className="bxt" style={{ color: "#0EC552"}}>
+                3  
+              </span >{" "}
               Completed Projects
             </div>
             {/* <div class="number">38,876</div> */}
@@ -152,7 +178,7 @@ function Dash() {
           <div className="right-side">
             <div className="box-topic">
               <span className="bxt" style={{ color: "#D6AE0E" }}>
-                2
+                2  
               </span>{" "}
               Queued Projects
             </div>
@@ -168,7 +194,7 @@ function Dash() {
           <div className="right-side">
             <div className="box-topic">
               <span className="bxt" style={{ color: "#FF0000" }}>
-                1
+                1  
               </span>{" "}
               Cancelled Project
             </div>
@@ -190,7 +216,7 @@ function Dash() {
             </div>
           </div>
           <div className="vertical" />
-          <hr style={{ marginLeft: "-1px", marginRight: "-1px" }} />
+          <hr style={{ marginLeft: "-1px", marginRight: "-1px", color:"#BFBFBF" }} />
           <div className="spt">
             <p>Category:E-Commerce</p>
             <p style={{ marginTop: 30 }}>Name of Client : Himanshu Agarwal</p>
@@ -200,7 +226,7 @@ function Dash() {
             <p style={{ marginTop: 30, color: "#FF0000" }}>
               Next Payment Date : 12 March 2022
             </p>
-            <hr style={{ marginLeft: "-30px", marginTop: 20 }} />
+            <hr style={{ marginLeft: "-30px", marginRight:1, marginTop: 20, color:"#BFBFBF" }} />
           </div>
           <div className="spx">
             <p style={{ marginTop: "-69px" }}>
@@ -219,7 +245,7 @@ function Dash() {
             </p>
           </div>
           <p className="sft">
-            View Complete Details in <a href="#">Project Details</a>
+            View Complete Details in <a  href="#">Project Details</a>
           </p>
           {/* <div class="Category: E-Commerce">
       <ul class="details">

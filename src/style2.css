@@ -272,6 +272,7 @@ height: 99px;
   display: flex;
   justify-content: space-between;
   /* padding: 0 20px; */
+  margin-top: 30PX;
 }
 
 /* left box */
@@ -457,7 +458,7 @@ height: 99px;
   top: 247px;
 left: 508px;
 width: 1364px;
-height: 447px;
+height: 320px;
 /* UI Properties */
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #BFBFBF;
@@ -472,7 +473,7 @@ margin-left: 36px;
 
 .vertical {
   border-left: 1px solid #BFBFBF;
-  height: 345px;
+  height: 272px;
   position:absolute;
   left: 35%;
 }
