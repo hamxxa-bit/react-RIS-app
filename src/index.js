@@ -4,14 +4,16 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import Dash from './dash';
 import Dash2 from './Dash2';
+import Dash3 from './Dash3';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <Prde /> */}
-    <Dash2 />
+    {/* <Dash /> */}
+    {/* <Dash2 /> */}
+    <Dash3 />
   </React.StrictMode>
 );
 
